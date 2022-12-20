@@ -134,6 +134,10 @@ li {
 
 
 /* benefits */
+.boxes-container-mobile {
+    display: none;
+}
+
 .boxes-container {
     display: flex;
     flex-direction: column;
@@ -201,69 +205,7 @@ li {
     margin-bottom: 55px;
 }
 
-.col-items {
-    width: 100%;
-}
 
-.col-list {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-}
-
-.col-list .chosen {
-    transform: translateY(-40px);
-}
-
-.col-items-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-}
-
-.item-descr-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    max-width: 135px;
-    width: 100%;
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-
-    margin-bottom: 20px;
-}
-
-.item-descr-nav img {
-    width: 30px;
-}
-
-.col-items-info .description {
-    display: flex;
-    flex-direction: column;
-
-    max-width: 361px;
-    width: 100%;
-}
-
-.col-items-info .description h3 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-
-    margin-bottom: 24px;
-}
-
-.col-items-info .description p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-}
 
 
 
@@ -499,7 +441,7 @@ li {
 
 /* laying */
 .laying {
-    background: linear-gradient( #ffffff 50%, #F9F9F9 50%);
+    background: linear-gradient(#ffffff 50%, #F9F9F9 50%);
 }
 
 .laying-container {
@@ -521,6 +463,10 @@ li {
 
     margin-bottom: 60px;
     margin-top: 100px;
+}
+
+.laying-images-mobile {
+    display: none;
 }
 
 .laying-images {
@@ -589,7 +535,7 @@ li {
 }
 
 .condition-items {
-    display: flex;    
+    display: flex;
     justify-content: space-evenly;
 
     max-width: 600px;
@@ -644,6 +590,10 @@ li {
     background: #F9F9F9;
 }
 
+.mobile-table {
+    display: none;
+}
+
 table {
     border: none;
     border-spacing: 5px;
@@ -666,7 +616,7 @@ table th {
 table p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px; 
+    line-height: 20px;
 
     padding: 12px 0;
 }
@@ -674,9 +624,6 @@ table p {
 table img {
     width: 24px;
 }
-
-
-
 
 
 
@@ -701,7 +648,6 @@ footer {
     width: 100%;
 
     padding-top: 244px;
-    padding-right: auto;
     padding-bottom: 211px;
     padding-left: 351px;
 }
@@ -736,4 +682,254 @@ footer {
     line-height: 20px;
     color: #FFFFFF;
 
+}
+
+
+
+
+/* nav button */
+.nav-button {
+    position: relative;
+    z-index: 9;
+    display: none;
+    height: 25px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav-button:focus,
+.nav-button:active {
+    outline: none;
+}
+
+/* X */
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-button-close .nav-button-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* nav icon */
+.nav-button-icon {
+    display: block;
+    position: relative;
+    background-color: black;
+    width: 18px;
+    height: 2px;
+    border: none;
+}
+
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: '';
+    display: block;
+    background-color: black;
+    width: 18px;
+    height: 2px;
+}
+
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: '';
+    display: block;
+    background-color: black;
+    width: 18px;
+    height: 2px;
+}
+
+
+/* mobile nav */
+.mobile-nav {
+    position: fixed;
+    z-index: 8;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    padding: 0 70px 50px 30px;
+}
+
+.mobile-nav .nav {
+    display: block;
+    padding-top: 20px;
+}
+
+.mobile-nav .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-nav .nav ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.mobile-nav .nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-logo {
+    max-width: 113px;
+    width: 100%;
+
+    margin-bottom: 60px;
+}
+
+
+
+/* slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 50px;
+    /* height: auto;
+    object-fit: cover; */
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper {
+    width: 1220px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-bottom: 82px;
+}
+
+.mySwiper .swiper-slide {
+    max-width: 200px;
+    width: 100%;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    width: 300px;
+    margin: 20px;
+
+    
+}
+
+.mySwiper .swiper-slide-thumb-active img {
+    max-width: 220px;
+    filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+}
+
+
+.swiper-slide img {
+    display: block;
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-fraction {
+    left: 62%;
+    top: 49%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    width: 150px;
+}
+
+.swiper-button-next {
+    left: 73%;
+    width: 70px;
+    color: transparent;
+}
+
+.swiper-button-prev{
+    left: 60%;
+    width: 70px;
+    color: transparent;
+}
+
+.descr-col {
+    max-width: 360px;
+    width: 100%;
+
+    margin-left: 130px;
+
+    text-align: left;
+}
+
+.descr-col h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.descr-col p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.preview img {
+    max-width: 200px;
 }

@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fargo</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="./fargo.css">
+    <link rel="stylesheet" href="./fargomedia.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +34,30 @@
                     <li><a href="#">Укладка</a></li>
                 </ul>
             </div>
-        </div>
+
+            <button class="nav-button">
+                <span class="nav-button-icon"></span>
+            </button>
+
+            <div class="mobile-nav">
+                <div class="nav">
+                    <div class="mobile-logo">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+
+                    <ul>
+                        <li><a href="#">Коллекции</a></li>
+                        <li><a href="#">О кварцевом ламинате</a></li>
+                        <li><a href="#">Укладка</a></li>
+                    </ul>
+                </div>
+            </div>
     </header>
 
     <main>
+
+
+
         <section class="intro">
             <div class="intro-container">
                 <h2>Кварцевый ламинат Fargo</h2>
@@ -88,42 +112,162 @@
                     </div>
                 </div>
             </div>
+
+            <div class="boxes-container-mobile">
+                <div class="box">
+                    <div class="box-info">
+                        <h3>100% водостойкость</h3>
+                        <p>Не боится даже потопа. Подходит для монтажа в ванной комнате.</p>
+                    </div>
+                    <div class="box-img">
+                        <img src="./images/waterproof_mobile.png" alt="waterproof">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-info">
+                        <h3>Прочность и стойкость к истиранию </h3>
+                        <p>Высокопрочный защитный слой FARGO позволяет использовать его в самых проходимых комнатах и
+                            даже в коммерческих помещениях. </p>
+                    </div>
+                    <div class="box-img">
+                        <img src="./images/scrub_resistance_mobile.png" alt="scrub_resistance">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-info">
+                        <h3>Шумопоглощение</h3>
+                        <p>Кварцевый ламинат гасит звуки шагов и падения предметов - это обеспечивает полный
+                            акустический комфорт у вас дома. </p>
+                    </div>
+                    <div class="box-img">
+                        <img src="./images/noise_control_mobile.png" alt="noise_control">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-info">
+                        <h3>Экологически чистый</h3>
+                        <p>FARGO не имеет запаха и не выделяет в воздух вредных веществ. Кварцевый ламинат разрешено
+                            использовать в детских и медицинских учреждениях.</p>
+                    </div>
+                    <div class="box-img">
+                        <img src="./images/eco_mobile.png" alt="eco">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="collection">
             <div class="col-container">
                 <h2>Коллекции Fargo</h2>
 
-                <div class="col-items">
-                    <ul class="col-list">
-                        <li>
-                            <a href="#"><img src="./images/stone_col.png" alt="stone"></a>
-                        </li>
-                        <li><a href="#"><img src="./images/classic_col.png" alt="classic"></a></li>
-                        <li class="chosen"><a href="#"><img src="./images/parquet_col.png" alt="parquet"></a></li>
-                        <li><a href="#"><img src="./images/comfort_col.png" alt="comfort"></a></li>
-                        <li><a href="#"><img src="./images/comfort_xxl_col.png" alt="comfort_xxl"></a></li>
-                    </ul>
-                </div>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="preview">
+                                    <img src="./images/stone.jpeg" />
+                                </div>
 
-                <div class="col-items-info">
-                    <div class="item-pic">
-                        <img src="./images/parquet_full.png" alt="parquet_full">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="preview">
+                                    <img src="./images/classic.jpeg" />
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="preview">
+                                    <img src="./images/parquet.jpeg" />
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="preview">
+                                    <img src="./images/comfort.jpeg" />
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="preview">
+                                    <img src="./images/comfort_xxl.jpeg" />
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="item-descr">
-                        <div class="item-descr-nav">
-                            <a href="#"><img src="./images/left_arrow.svg" alt="left_arrow"></a>
-                            <p>3 / 5</p>
-                            <a href="#"><img src="./images/right_arrow.svg" alt="right_arrow"></a>
+                    <div class="nav-col">
+                        <div class="swiper-button-next">
+                            <img src="./images/right_arrow.svg">
                         </div>
-
-                        <div class="description">
-                            <h3>Коллекция PARQUET </h3>
-                            <p>Благородная укладка паркетной ёлочкой - яркий тренд, который одинаково хорошо сочетается
-                                как с традиционными стилями интерьера, так и с современными решениями. </p>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev">
+                            <img src="./images/left_arrow.svg">
                         </div>
                     </div>
+
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <img src="./images/stone_full.jpeg" />
+                            <div class="descr-col">
+                                <h3>Коллекция STONE</h3>
+                                <p>Идеальное решение для воплощения трендовых дизайнерских идей, где важны
+                                    выразительность,
+                                    самодостаточность и эстетика каменных текстур.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/classic_full.jpeg" />
+                            <div class="descr-col">
+                                <h3>Коллекция CLASSIC</h3>
+                                <p>Коллекция Classic является базовой для разработки индивидуального решения интерьера.
+                                    Цвета
+                                    коллекции всегда будут в тренде. Мы предлагаем два размера в рамках данной
+                                    коллекции.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/parquet_full.png" />
+                            <div class="descr-col">
+                                <h3>Коллекция PARQUET </h3>
+                                <p>Благородная укладка паркетной ёлочкой - яркий тренд, который одинаково хорошо
+                                    сочетается
+                                    как с традиционными стилями интерьера, так и с современными решениями. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/comfort_full.jpeg" />
+                            <div class="descr-col">
+                                <h3>Коллекция COMFORT </h3>
+                                <p>Мы специально разработали коллекцию Comfort для реализации самых смелых дизайнерских
+                                    решений.
+                                    В
+                                    ней вы найдете все современные цветовые тренды и классические варианты. FARGO
+                                    позволяет с
+                                    легкостью реализовывать любые проекты - от уютной детской комнаты до брутального
+                                    кабинета
+                                    руководителя.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/comfort_xxl_full.jpeg" />
+                            <div class="descr-col">
+                                <h3>Коллекция COMFORT XXL</h3>
+                                <p>Коллекция Comfort XXL сделана специально для классических интерьеров. Она создана
+                                    наполнять
+                                    спокойствием и размеренностью любое помещение. Корни этой коллекции идут из
+                                    классических
+                                    дизайнов массивной доски.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -261,6 +405,12 @@
                     <img src="./images/decking.png" alt="decking_full">
                 </div>
 
+                <div class="laying-images-mobile">
+                    <img src="./images/herringbone_mobile.png" alt="herringbone_full">
+
+                    <img src="./images/decking_mobile.png" alt="decking_full">
+                </div>
+
                 <div class="laying-points">
                     <h4>Подходит для укладки на любое основание: </h4>
 
@@ -308,7 +458,7 @@
             <div class="options-info">
                 <h2>Возможности</h2>
 
-                <table class="tg">
+                <table>
                     <thead>
                         <tr>
                             <th>
@@ -390,6 +540,103 @@
                     </tbody>
                 </table>
 
+                <table class="mobile-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h4>Кварцевый
+                                    ламинат</h4>
+                            </th>
+                            <th>
+                                <h4>Обычный ламинат</h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Водостойкость</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Пожаробезопасность</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Простая укладка</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Совместим с теплым полом</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Стойкость к точечным нагрузкам</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Ударопрочность</p>
+                            </td>
+                        </tr>
+                        <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                        <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Геометрическая стабильность</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Экологический материал без вредных примесей</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/x_icon.svg" alt="x_icon"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p>Простая уборка</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                            <td align="center"><img src="./images/circle_checked.svg" alt="circle_checked"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         </section>
     </main>
@@ -400,7 +647,7 @@
             <p>Сделать выбор в пользу одного из дизайнов кварцевого ламината
                 и сопутствующих товаров можно на сайте или в ближайшем к вам
                 магазине с Fargo.</p>
-
+            <br>
             <p> Просто выберите свой город, и вы увидите его
                 карту с адресами магазинов кварцевого ламината Fargo.</p>
 
@@ -411,6 +658,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./fargo.js"></script>
 </body>
 
