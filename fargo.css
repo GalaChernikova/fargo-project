@@ -195,7 +195,7 @@ li {
     max-width: 1220px;
     width: 100%;
 
-    margin: 0 auto 150px;
+    margin: 0 auto;
 }
 
 .col-container h2 {
@@ -849,15 +849,17 @@ footer {
 }
 
 .mySwiper2 {
-    height: 80%;
+    height: 100%;
     width: 100%;
+
+    margin-bottom: 150px;
 }
 
 .mySwiper {
     width: 1220px;
     box-sizing: border-box;
     padding: 10px 0;
-    margin-bottom: 82px;
+    margin-bottom: 50px;
 }
 
 .mySwiper .swiper-slide {
@@ -869,7 +871,7 @@ footer {
     width: 300px;
     margin: 20px;
 
-    
+
 }
 
 .mySwiper .swiper-slide-thumb-active img {
@@ -896,12 +898,14 @@ footer {
 
 .swiper-button-next {
     left: 73%;
+    top: 51%;
     width: 70px;
     color: transparent;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     left: 60%;
+    top: 51%;
     width: 70px;
     color: transparent;
 }
@@ -911,7 +915,7 @@ footer {
     width: 100%;
 
     margin-left: 130px;
-
+    margin-top: 30px;
     text-align: left;
 }
 
@@ -928,8 +932,13 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+
 }
 
 .preview img {
     max-width: 200px;
+}
+
+.preview .item-name {
+    display: none;
 }
