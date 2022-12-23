@@ -78,6 +78,10 @@
         margin: 30px;
     }
 
+    .box-img {
+        max-width: 475px;
+    }
+
     .str-container {
         max-width: 1000px;
     }
@@ -122,6 +126,10 @@
 
     .box-info {
         margin: 10px 30px;
+    }
+
+    .box-img {
+        max-width: 348px;
     }
 
     .col-container {
@@ -250,26 +258,28 @@
         font-size: 22px;
     }
 
-    .boxes-container {
-        display: none;
-    }
-
-    .boxes-container-mobile {
-        display: block;
-        margin-top: 40px;
-    }
-
     .box {
         flex-direction: column;
         max-width: 335px;
         margin-left: auto;
         margin-right: auto;
+
+        padding: 30px 0 0;
     }
 
     .box-info {
         text-align: center;
         margin: 0;
-        padding: 20px;
+    }
+
+    .box-info h3,
+    .box-info p {
+        padding: 0 15px;
+    }
+
+    .box-icon {
+        left: 0;
+        top: 40px;
     }
 
     .col-container {
@@ -434,6 +444,11 @@
         font-size: 15px;
     }
 
+    .box-icon {
+        width: 60px;
+        top: 48px;
+    }
+
     .mySwiper2 {
         max-width: 400px;
     }
@@ -497,6 +512,7 @@
         font-size: 15px;
     }
 }
+
 
 @media (max-width: 400px) {
     .intro {
